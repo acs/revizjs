@@ -1,0 +1,17 @@
+{
+  "name": "Bitergia dash ng",
+  "description": "New Bitergia dash using AngularJS",
+  "version": "0.0.1",
+  "homepage": "https://github.com/VizGrimoire/VizGrimoireJS/tree/angularjs",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-loader": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "html5-boilerplate": "~4.3.0",
+    "bootstrap": "~3.1.1",
+    "jquery": "1.10.2"
+  }
+}
