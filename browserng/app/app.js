@@ -11,7 +11,8 @@ var dashApp = angular.module('dashApp', [
 dashApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
       when('/ds', {
-          templateUrl: 'ds/global.html',
+          // templateUrl: 'ds/global.html',
+          templateUrl: 'templates/common/overview.tmpl',
           controller: 'DataSourceGlobalCtrl'
       }).
       when('/ds/:datasourceId', {
