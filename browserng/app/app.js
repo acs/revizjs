@@ -2,13 +2,13 @@
 
 // Declare app level module which depends on views, and components
 
-var myApp = angular.module('myApp', [
+var dashApp = angular.module('dashApp', [
   'ngRoute',
   'datasourceControllers',
   'myApp.version'
 ]);
 
-myApp.config(['$routeProvider', function($routeProvider) {
+dashApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
       when('/ds', {
           templateUrl: 'ds/global.html',
