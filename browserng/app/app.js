@@ -4,22 +4,23 @@
 
 var myApp = angular.module('myApp', [
   'ngRoute',
+  'datasourceControllers',
   'myApp.version'
 ]);
 
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
-      when('/scm', {
-          templateUrl: 'scm/overview.html',
-          // controller: 'PhoneListCtrl'
+      when('/ds', {
+          templateUrl: 'ds/global.html',
+          controller: 'DataSourceGlobalCtrl'
       }).
-      when('/scm/companies', {
-          templateUrl: 'scm/companies/scm_companies.html',
-          // controller: 'PhoneListCtrl'
+      when('/ds/:datasourceId', {
+          templateUrl: 'ds/overview.html',
+          controller: 'DataSourceOverviewCtrl'
       }).
-      when('/scm/repos', {
-          templateUrl: 'scm/repos/scm_repos.html',
-          // controller: 'PhoneListCtrl'
-    }).
-    otherwise({redirectTo: '/scm'});
+      when('/ds/:datasourceId/:filterId', {
+          templateUrl: 'ds/filter.html',
+          controller: 'DataSourceFilterCtrl'
+      }).
+      otherwise({redirectTo: '/ds'});
 }]);
